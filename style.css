@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "BioRhyme", serif;
+}
+
+section,
+aside {
+  padding-top: 16px;
+  padding-left: 14px;
+  padding-bottom: 16px;
+  padding-right: 15px;
+}
+
+/* RESET CSS */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  outline: none;
+  box-shadow: none;
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* 
+* Control font awesome icons colors with 
+* color and font-size attributes
+*/
+
+/* MOBILE DESIGN */
+/* DESIGNED FOR 375px */
+
+/* LANDING SECTION */
+.landing {
+  background-color: #f7f2e2;
+}
+
+/* Hide social media links on mobile */
+.landing .socials {
+  display: none;
+}
+
+.burger {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 12px;
+  height: 2px;
+  background-color: #dd514c;
+  margin-bottom: 3px;
+  transition: all 300ms ease;
+}
+
+.burger div:last-child {
+  margin-bottom: 0;
+}
+
+.landing nav {
+  display: flex;
+  align-items: center;
+  min-height: 6vh;
+}
+
+.landing .nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  left: 0;
+  top: 8vh;
+  height: 92vh;
+  background-color: #f7f2e2;
+  transform: translateX(-100%);
+  transition: transform 500ms ease-in;
+}
+
+.landing .nav-links li {
+  opacity: 0;
+}
+
+/* Sliding nav */
+.landing .nav-active {
+  transform: translateX(0%);
+}
+
+/* Animation for links fading in */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.landing .logo {
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Burger icon toggle */
+.burger-toggle .line1 {
+  transform: translate(0px, 5px) rotate(-45deg);
+}
+
+.burger-toggle .line2 {
+  opacity: 0;
+}
+
+.burger-toggle .line3 {
+  transform: translate(0px, -5px) rotate(45deg);
+}
+
+/* DESKTOP DESIGN */
+/* DESIGNED FOR 1440px */
+@media only screen and (min-width: 768px) {
+  section,
+  aside {
+    padding-top: 16px;
+    padding-left: 135px;
+    padding-bottom: 16px;
+    padding-right: 135px;
+  }
+  /* LANDING SECTION */
+
+  /* Show social media links on desktop */
+  .landing .socials {
+    display: block;
+  }
+
+  .landing .social-links {
+    display: flex;
+  }
+
+  .landing nav {
+    justify-content: space-between;
+  }
+}
