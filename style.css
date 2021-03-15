@@ -8,6 +8,7 @@ body {
   font-family: "DM Sans", sans-serif;
   font-size: 16px;
   line-height: 2;
+  color: #333;
 }
 
 h1,
@@ -66,6 +67,19 @@ dd {
 /* MOBILE DESIGN */
 /* DESIGNED FOR 375px */
 
+/* UTILITIES */
+.contact-button {
+  display: block;
+  padding: 10px 0;
+  width: 170px;
+  font-family: "BioRhyme", serif;
+  font-size: 18px;
+  line-height: 1.5488888889;
+  text-align: center;
+  border-radius: 24px;
+  color: #fff;
+}
+
 /* LANDING SECTION */
 .landing {
   background-color: #f7f2e2;
@@ -105,6 +119,11 @@ dd {
   display: flex;
   align-items: center;
   min-height: 6vh;
+  margin-bottom: 58px;
+}
+
+.landing .burger-and-logo {
+  display: flex;
 }
 
 .landing .nav-links {
@@ -115,15 +134,27 @@ dd {
   width: 50%;
   position: absolute;
   left: 0;
-  top: 8vh;
-  height: 92vh;
+  top: 9vh;
+  height: 91vh;
   background-color: #f7f2e2;
   transform: translateX(-100%);
   transition: transform 500ms ease-in;
+  z-index: 100;
 }
 
 .landing .nav-links li {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
+  transition: background-color 400ms ease;
+}
+
+.landing .nav-links li:hover {
+  background-color: #e6e1d1;
+  text-decoration: underline;
 }
 
 /* Sliding nav */
@@ -143,13 +174,6 @@ dd {
   }
 }
 
-.landing .logo {
-  font-family: "BioRhyme", serif;
-  font-size: 40px;
-  line-height: 1.2;
-  text-transform: uppercase;
-}
-
 /* Burger icon toggle */
 .burger-toggle .line1 {
   transform: translate(0px, 5px) rotate(-45deg);
@@ -161,6 +185,67 @@ dd {
 
 .burger-toggle .line3 {
   transform: translate(0px, -5px) rotate(45deg);
+}
+
+.landing .logo {
+  font-family: "BioRhyme", serif;
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.landing-info strong {
+  font-size: 18px;
+  line-height: 1.7777777778;
+  margin-bottom: 18px;
+}
+
+.landing-info h1 {
+  font-size: 56px;
+  line-height: 1.1428571429;
+  margin-bottom: 36px;
+}
+
+.landing-info .contact-button {
+  background-color: #dd514c;
+  margin-bottom: 64px;
+}
+
+.landing-image {
+  width: 100%;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.landing-image img {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.landing-image #play-icon-container {
+  width: 13%;
+  height: 17%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  position: absolute;
+  bottom: calc(9.6466992854% + 11px);
+  right: 7.225433526%;
+  z-index: 3;
+}
+
+.landing-image i {
+  color: #dd514c;
+}
+
+.landing-image .dots {
+  position: absolute;
+  right: -2%;
+  bottom: -17%;
+  z-index: 1;
 }
 
 /* DESKTOP DESIGN */
@@ -175,9 +260,8 @@ dd {
   }
   /* LANDING SECTION */
 
-  /* Show social media links on desktop */
-  .landing .socials {
-    display: block;
+  .landing {
+    position: relative;
   }
 
   .landing .social-links {
@@ -186,5 +270,94 @@ dd {
 
   .landing nav {
     justify-content: space-between;
+    margin-bottom: 13%;
+  }
+
+  .landing .nav-links {
+    width: 35%;
+  }
+
+  /* Show social media links on desktop */
+  .landing .socials {
+    display: block;
+    width: 160px;
+  }
+
+  .landing .socials li {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socials li a i {
+    color: #dd514c;
+  }
+
+  .social-links .instagram i {
+    font-size: 18px;
+  }
+
+  .social-links li {
+    margin-right: 8px;
+  }
+
+  .social-links li:last-child {
+    margin-right: 0;
+  }
+
+  .landing-info {
+    position: relative;
+    z-index: 10;
+  }
+
+  .landing-image {
+    z-index: 9;
+  }
+
+  .landing-info strong {
+    margin-bottom: 21px;
+  }
+
+  .landing-info h1 {
+    max-width: 527px;
+    font-size: 72px;
+    line-height: 1.1111111111;
+    margin-bottom: 33px;
+  }
+
+  .landing-info .contact-button {
+    margin-bottom: 21%;
+  }
+
+  .landing-image {
+    width: 45%;
+    max-width: 870px;
+    margin-bottom: 128px;
+    position: absolute;
+    top: 128px;
+    right: 135px;
+  }
+
+  .landing-image #play-icon-container {
+    max-width: 112px;
+    max-height: 112px;
+  }
+
+  .landing-image i {
+    font-size: 25px;
+  }
+
+  .landing-image .dots {
+    right: -13%;
+    bottom: -12%;
   }
 }
+
+/*****************/
+/*****************/
+/*****************/
+/*****************/
