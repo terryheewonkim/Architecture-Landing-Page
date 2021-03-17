@@ -23,6 +23,7 @@ aside {
   padding-left: 14px;
   padding-bottom: 16px;
   padding-right: 15px;
+  overflow: hidden;
 }
 
 /* RESET CSS */
@@ -271,6 +272,7 @@ dd {
 /*******************/
 /* SERVICE SECTION */
 /*******************/
+
 .service {
   background-color: #f9c65e;
 }
@@ -364,6 +366,87 @@ dd {
 
 .previous {
   margin-right: 8px;
+}
+
+/********************/
+/* PROJECTS SECTION */
+/********************/
+
+.projects {
+  background-color: #f7f2e2;
+}
+
+.projects .section-header {
+  text-align: center;
+  margin-top: 58px;
+  margin-bottom: 54px;
+}
+
+.projects .projects-cards-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.projects-cards-container .dots {
+  position: absolute;
+  top: -8.5%;
+  right: -4%;
+  z-index: 1;
+}
+
+.projects .projects-card {
+  width: 75%;
+  min-width: 286px;
+  height: 544px;
+  border-radius: 40px;
+}
+
+.projects-card.pj1 {
+  background-image: url("./assets/projects-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 103%;
+}
+
+.projects-card.pj2 {
+  background-image: url("./assets/projects-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.projects-card.pj2 .card-info {
+  width: 80%;
+  min-width: 227px;
+  padding: 40px 45px;
+  background-color: #fff;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: absolute;
+  bottom: 0;
+}
+
+.projects-card.pj2 .card-info h3 {
+  font-size: 24px;
+  line-height: 1.3333333333;
+  margin-bottom: 17px;
+}
+
+.projects-card.pj2 .card-info p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.projects-card.pj3 {
+  background-image: url("./assets/projects-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 103%;
 }
 
 /* DESKTOP DESIGN */
@@ -547,5 +630,28 @@ dd {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+  }
+
+  /********************/
+  /* PROJECTS SECTION */
+  /********************/
+
+  .projects .projects-card {
+    max-width: 970px;
+  }
+
+  .projects-cards-container .dots {
+    right: 7%;
+  }
+
+  .projects-card.pj2 .card-info {
+    max-width: 470px;
+    padding: 42px 45px;
+  }
+
+  .projects-card.pj2 .card-info h3 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 }
