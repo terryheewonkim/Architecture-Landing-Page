@@ -591,6 +591,11 @@ dd {
     font-size: 56px;
     line-height: 1.1428571429;
   }
+
+  .section-header strong {
+    margin-bottom: 18px;
+  }
+
   /*******************/
   /* LANDING SECTION */
   /*******************/
@@ -806,13 +811,40 @@ dd {
   /* EXPERTS SECTION */
   /*******************/
 
+  .experts {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .experts .section-header {
+    max-width: 330px;
+    margin-right: 69px;
+  }
+
   /* Show second card in desktop */
   .ec2 {
     display: block;
   }
 
   .experts .cards {
+    margin-top: 128px;
     display: flex;
+    justify-content: space-between;
     max-width: 770px;
+  }
+
+  .experts .slider-buttons {
+    position: absolute;
+    top: 67%;
+  }
+
+  .experts-card.ec2 .card-info {
+    bottom: -26.5%;
+  }
+
+  .experts .cards .dots {
+    left: -8.5%;
+    bottom: -9.4%;
   }
 }
