@@ -85,11 +85,38 @@ dd {
 .section-header strong {
   font-size: 18px;
   line-height: 1.7777777778;
+  margin-bottom: 16px;
 }
 
 .section-header h2 {
   font-size: 40px;
   line-height: 1.2;
+}
+
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.slider-buttons div {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.previous i,
+.next i {
+  color: #dd514c;
+  font-size: 24px;
+}
+
+.previous {
+  margin-right: 8px;
 }
 
 /*******************/
@@ -343,32 +370,6 @@ dd {
   z-index: 1;
 }
 
-.service .slider-buttons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 64px;
-}
-
-.service .slider-buttons div {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-}
-
-.previous i,
-.next i {
-  color: #dd514c;
-  font-size: 24px;
-}
-
-.previous {
-  margin-right: 8px;
-}
-
 /********************/
 /* PROJECTS SECTION */
 /********************/
@@ -509,6 +510,71 @@ dd {
 .pct-2,
 .pct-3,
 .pct-4 {
+  display: none;
+}
+
+/*******************/
+/* EXPERTS SECTION */
+/*******************/
+.experts {
+  background-color: #f7f2e2;
+}
+
+.experts .section-header {
+  margin-top: 58px;
+  margin-bottom: 54px;
+}
+
+.experts .cards {
+  position: relative;
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.experts-card {
+  position: relative;
+  border-radius: 20px;
+  z-index: 3;
+}
+
+.experts-card .card-image {
+  position: relative;
+}
+
+.experts-card .card-image img {
+  width: 100%;
+}
+
+.experts-card .card-info {
+  width: 100%;
+  padding-top: 40px;
+  padding-left: 48px;
+  padding-bottom: 37px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+
+.experts-card .card-info h3 {
+  font-style: 24px;
+  line-height: 1.3333333333;
+  margin-bottom: 19px;
+}
+
+.experts-card .card-info p {
+  color: rgba(51, 51, 51, 0.501557);
+}
+
+.experts .cards .dots {
+  position: absolute;
+  left: -3.5%;
+  bottom: -10%;
+  z-index: 2;
+}
+
+/* Hide 2nd card on mobile */
+.ec2 {
   display: none;
 }
 
@@ -680,19 +746,8 @@ dd {
   }
 
   .service .slider-buttons {
-    display: flex;
     justify-content: flex-start;
     margin-bottom: 96px;
-  }
-
-  .service .slider-buttons div {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
   }
 
   /********************/
@@ -745,5 +800,19 @@ dd {
     background: linear-gradient(270deg, #f9c65e 50%, transparent 50%),
       linear-gradient(64.8deg, #f9c65e 50%, transparent 50%),
       linear-gradient(270deg, transparent 50%, #8b95c6 50%);
+  }
+
+  /*******************/
+  /* EXPERTS SECTION */
+  /*******************/
+
+  /* Show second card in desktop */
+  .ec2 {
+    display: block;
+  }
+
+  .experts .cards {
+    display: flex;
+    max-width: 770px;
   }
 }
