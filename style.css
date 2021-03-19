@@ -635,7 +635,7 @@ dd {
   line-height: 1.6;
 }
 
-.image-container .achievements-info p:not(:last-child) {
+.image-container .achievements-info .info-grouping:first-child {
   margin-bottom: 19px;
 }
 
@@ -914,5 +914,54 @@ dd {
   .experts .cards .dots {
     left: -8.5%;
     bottom: -9.4%;
+  }
+
+  /************************/
+  /* ACHIEVEMENTS SECTION */
+  /************************/
+
+  .achievements {
+    position: relative;
+  }
+
+  .achievements .section-header {
+    position: absolute;
+    right: 135px;
+    top: 202px;
+    max-width: 610px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: right;
+    z-index: 2;
+  }
+
+  .achievements .image-container {
+    max-width: 870px;
+    margin: 112px 0;
+    z-index: 1;
+  }
+
+  .image-container .achievements-info {
+    display: flex;
+  }
+
+  .image-container .achievements-info strong {
+    font-size: 72px;
+    line-height: 1.1111111111;
+    margin-bottom: 10px;
+  }
+
+  .image-container .achievements-info .info-grouping:first-child {
+    margin-right: 108px;
+  }
+
+  .image-container .achievements-info {
+    bottom: 4%;
+    left: 6%;
+  }
+
+  .image-container .dots {
+    bottom: -8.5%;
+    right: -8%;
   }
 }
