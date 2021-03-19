@@ -82,6 +82,10 @@ dd {
   color: #fff;
 }
 
+.contact-button:hover {
+  opacity: 0.8;
+}
+
 .section-header strong {
   font-size: 18px;
   line-height: 1.7777777778;
@@ -646,6 +650,70 @@ dd {
   z-index: 1;
 }
 
+/***************************/
+/* NEWS & ARTICLES SECTION */
+/***************************/
+
+.news {
+  background-color: #f7f2e2;
+}
+
+.news .section-header {
+  margin-top: 58px;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+/* Hide 2nd and 3rd cards on mobile */
+.news .article-card.ac2,
+.news .article-card.ac3 {
+  display: none;
+}
+
+.news .article-cards-wrapper {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.article-cards-wrapper .article-card {
+  width: 100%;
+  max-width: 370px;
+  height: 484px;
+  background-color: #dd514c;
+  color: #fff;
+  border-radius: 20px;
+  padding: 15px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.article-card .article-date span {
+  font-family: "BioRhyme", serif;
+  font-size: 72px;
+  line-height: 1.1111111111;
+}
+
+.article-card .article-date p {
+  color: rgba(255, 255, 255, 0.502972);
+}
+
+.article-card .article-info span {
+  display: block;
+  margin-bottom: 13px;
+}
+
+.article-card .article-info p {
+  font-family: "BioRhyme", serif;
+  font-size: 24px;
+  line-height: 1.3333333333;
+  font-weight: 700;
+}
+
+.news .slider-buttons {
+  margin-bottom: 64px;
+}
+
 /* DESKTOP DESIGN */
 /* DESIGNED FOR 1440px */
 @media only screen and (min-width: 768px) {
@@ -699,10 +767,15 @@ dd {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: border 200ms ease;
   }
 
   .socials li a i {
     color: #dd514c;
+  }
+
+  .landing .socials li:hover {
+    border: 3px solid #dd514c;
   }
 
   .social-links .instagram i {
@@ -963,5 +1036,15 @@ dd {
   .image-container .dots {
     bottom: -8.5%;
     right: -8%;
+  }
+
+  /***************************/
+  /* NEWS & ARTICLES SECTION */
+  /***************************/
+
+  /* Show 2nd and 3rd cards on desktop */
+  .ac2,
+  .ac3 {
+    display: block;
   }
 }
