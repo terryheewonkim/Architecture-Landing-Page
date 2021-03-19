@@ -673,9 +673,11 @@ dd {
 .news .article-cards-wrapper {
   width: 100%;
   margin-bottom: 64px;
+  position: relative;
 }
 
 .article-cards-wrapper .article-card {
+  position: relative;
   width: 100%;
   max-width: 370px;
   height: 484px;
@@ -686,6 +688,7 @@ dd {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 2;
 }
 
 .article-card .article-date span {
@@ -712,6 +715,13 @@ dd {
 
 .news .slider-buttons {
   margin-bottom: 64px;
+}
+
+.article-cards-wrapper .dots {
+  position: absolute;
+  right: -3.5%;
+  bottom: -11.5%;
+  z-index: 1;
 }
 
 /* DESKTOP DESIGN */
@@ -1042,9 +1052,24 @@ dd {
   /* NEWS & ARTICLES SECTION */
   /***************************/
 
+  .news .section-header {
+    margin-bottom: 52px;
+  }
+
   /* Show 2nd and 3rd cards on desktop */
-  .ac2,
-  .ac3 {
-    display: block;
+  .news .article-cards-wrapper .article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .article-cards-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article-cards-wrapper .dots {
+    right: -5.5%;
+    bottom: -11.5%;
   }
 }
