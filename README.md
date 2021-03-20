@@ -4,5 +4,5 @@ This is a **responsive** website project for mobile (375px) and desktop (1440px)
 
 _Design credits to Iaaqiq Design_
 
-You can view the project here:
-[https://terryheewonkim.github.io/Architecture-Landing-Page/]
+You can view the project here:  
+https://terryheewonkim.github.io/Architecture-Landing-Page/
