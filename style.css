@@ -19,7 +19,8 @@ h4 {
 }
 
 section,
-aside {
+aside,
+footer {
   padding-top: 16px;
   padding-left: 14px;
   padding-bottom: 16px;
@@ -854,11 +855,96 @@ dd {
   right: -4%;
 }
 
+/******************/
+/* FOOTER SECTION */
+/******************/
+
+footer {
+  color: #fff;
+  background-color: #24201e;
+}
+
+.footer-groups {
+  margin-bottom: 62px;
+}
+
+.footer-groups:nth-child(3) {
+  margin-bottom: 80px;
+}
+
+footer h2 {
+  font-size: 40px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin-bottom: 33px;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.502972);
+}
+
+footer h3 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 34px;
+}
+
+footer .socials .social-links {
+  display: flex;
+}
+
+footer .socials li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: border 100ms ease;
+}
+
+footer .socials li a:hover {
+  border: 3px solid #fff;
+}
+
+footer .social-links .instagram i {
+  font-size: 18px;
+}
+
+footer .social-links li {
+  margin-right: 8px;
+}
+
+footer .social-links li:last-child {
+  margin-right: 0;
+}
+
+footer hr {
+  margin-bottom: 58px;
+  opacity: 0.1;
+}
+
+footer .copyright {
+  max-width: 234px;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+footer .terms {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /* DESKTOP DESIGN */
 /* DESIGNED FOR 1440px */
 @media only screen and (min-width: 768px) {
   section,
-  aside {
+  aside,
+  footer {
     padding: 16px 135px;
   }
 
@@ -907,7 +993,7 @@ dd {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: border 200ms ease;
+    transition: border 100ms ease;
   }
 
   .socials li a i {
@@ -1272,4 +1358,8 @@ dd {
   .contact .dots {
     right: -14.5%;
   }
+
+  /******************/
+  /* FOOTER SECTION */
+  /******************/
 }
