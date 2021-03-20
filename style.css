@@ -690,7 +690,7 @@ dd {
   margin-bottom: 64px;
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .article-cards-wrapper .article-card {
@@ -817,6 +817,41 @@ dd {
   left: -3%;
   bottom: -5.2%;
   z-index: 1;
+}
+
+/*****************/
+/* CONTACT ASIDE */
+/*****************/
+
+.contact {
+  background-color: #7e89be;
+  background-image: url("./assets/contact-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left 71.5% center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact .section-header {
+  position: relative;
+  text-align: center;
+  margin-top: 54px;
+  margin-bottom: 22px;
+  color: #fff;
+}
+
+.contact .contact-button {
+  color: #333;
+  background-color: #95c5c8;
+  margin-bottom: 80px;
+}
+
+.contact .dots {
+  position: absolute;
+  top: 18%;
+  right: -4%;
 }
 
 /* DESKTOP DESIGN */
@@ -1223,5 +1258,18 @@ dd {
   .ttm-container .dots {
     left: -7.3%;
     bottom: -8%;
+  }
+
+  /*****************/
+  /* CONTACT ASIDE */
+  /*****************/
+
+  .contact .section-header {
+    margin-bottom: 36px;
+    max-width: 596px;
+  }
+
+  .contact .dots {
+    right: -14.5%;
   }
 }
