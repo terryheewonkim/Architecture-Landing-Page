@@ -40,6 +40,12 @@ textarea {
   font-size: 16px;
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 button:focus,
 button:active,
 input:focus,
@@ -102,6 +108,14 @@ dd {
   display: flex;
   justify-content: center;
   margin-bottom: 48px;
+}
+
+.slider-buttons button {
+  transition: opacity 200ms ease;
+}
+
+.slider-buttons button:hover {
+  opacity: 0.8;
 }
 
 .slider-buttons div {
@@ -1151,5 +1165,63 @@ dd {
   .article-cards-wrapper .dots {
     right: -5.5%;
     bottom: -11.5%;
+  }
+
+  /************************/
+  /* TESTIMONIALS SECTION */
+  /************************/
+
+  .testimonials {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .testimonials .section-header {
+    position: relative;
+    bottom: 50px;
+    order: 1;
+    max-width: 213px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .testimonials .section-header h2 {
+    white-space: normal;
+  }
+
+  .testimonials .ttm-container {
+    order: 3;
+    margin-top: 128px;
+    margin-bottom: 128px;
+  }
+
+  .ttm-container .image-info-wrapper {
+    width: 870px;
+    height: 592px;
+  }
+
+  .ttm-container .testimonial-image {
+    background-size: contain;
+    background-position: top 0% left 0%;
+  }
+
+  .ttm-container .image-info {
+    width: 470px;
+    top: 0%;
+    right: 0%;
+  }
+
+  .testimonials .slider-buttons {
+    position: absolute;
+    order: 2;
+    top: 62%;
+    left: 135px;
+  }
+
+  .ttm-container .dots {
+    left: -7.3%;
+    bottom: -8%;
   }
 }
